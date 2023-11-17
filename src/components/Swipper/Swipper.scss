@@ -1,0 +1,16 @@
+.swipper{
+  width: 950px;
+  height: 250px;
+  &__container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__items{
+    height: 100%;
+    display: flex;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 500ms;
+  }
+}
