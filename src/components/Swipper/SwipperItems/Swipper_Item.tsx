@@ -1,4 +1,5 @@
 import './Swipper_Item.scss';
+import React from 'react';
 
 type Props = {
   title: string;
@@ -27,4 +28,5 @@ const Swipper_Item = ({ title, width, maxwidth, id }: Props) => {
   );
 };
 
-export default Swipper_Item;
+// eslint-disable-next-line react-refresh/only-export-components
+export default React.memo(Swipper_Item);
