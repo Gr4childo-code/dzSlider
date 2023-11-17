@@ -22,7 +22,7 @@ function App() {
     });
   }, []);
 
-  return <div className='container'>{status !== 200 ? <p>LOADING.....</p> : <Swipper data={items} />}</div>;
+  return <div className='container'>{status !== 200 && status ? <p>LOADING.....</p> : <Swipper data={items} />}</div>;
 }
 
 export default App;

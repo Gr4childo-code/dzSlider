@@ -32,7 +32,7 @@ const Swipper = ({ data }: { data: ISwipper[] }) => {
       <div className='swipper__container'>
         <div className='swipper__items' style={{ transform: `translateX(${currentSLide}px)` }}>
           {data?.map(item => (
-            <Swipper_Item id={item.id} title={item.title} key={item.id} width={SWIPPER_WITH} maxwidth={SWIPPER_WITH} />
+            <Swipper_Item id={item.id} title={item.title} key={item.id} width={SWIPPER_WITH} />
           ))}
         </div>
       </div>

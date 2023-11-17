@@ -4,11 +4,10 @@ import React from 'react';
 type Props = {
   title: string;
   width: number;
-  maxwidth: number;
   id: number;
 };
 
-const Swipper_Item = ({ title, width, maxwidth, id }: Props) => {
+const Swipper_Item = ({ title, width, id }: Props) => {
   function randColor() {
     const r = Math.floor(Math.random() * 256),
       g = Math.floor(Math.random() * 256),
@@ -17,10 +16,7 @@ const Swipper_Item = ({ title, width, maxwidth, id }: Props) => {
   }
 
   return (
-    <div
-      className='swipper__item'
-      style={{ minWidth: `${width}px`, maxWidth: `${maxwidth}px`, background: randColor() }}
-    >
+    <div className='swipper__item' style={{ minWidth: `${width}px`, background: randColor() }}>
       <p className='swipper__item__title'>
         {title} ID={id}
       </p>
